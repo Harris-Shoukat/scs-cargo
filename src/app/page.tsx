@@ -1,7 +1,14 @@
+import { Contact, Hero, Pricing, Services, WhatWeDo, WhyChooseUs } from "@/components/home";
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <h1>SCS Cargo</h1>
-    </main>
+    <>
+      <Hero />
+      <WhatWeDo />
+      <Services />
+      <WhyChooseUs />
+      <Pricing />
+      <Contact />
+    </>
   );
 }
