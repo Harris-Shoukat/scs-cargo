@@ -127,7 +127,8 @@ export function WhyChooseUs() {
               width={700}
               height={580}
               className="h-auto w-full max-w-xl md:max-w-2xl lg:max-w-3xl object-contain object-center"
-              priority={false}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 700px"
+              loading="lazy"
             />
           </div>
         </div>

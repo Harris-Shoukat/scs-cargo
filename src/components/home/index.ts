@@ -1,6 +1,11 @@
+export { Contact } from "./Contact";
+export { FAQ } from "./FAQ";
 export { Hero } from "./Hero";
+export { Marquee } from "./Marquee";
+export { TeamSection } from "./TeamSection";
+export { Testimonials } from "./Testimonials";
 export { Pricing } from "./Pricing";
 export { Services } from "./Services";
 export { WhatWeDo } from "./WhatWeDo";
+export { VideoSection } from "./VideoSection";
 export { WhyChooseUs } from "./WhyChooseUs";
-export { Contact } from "./Contact";

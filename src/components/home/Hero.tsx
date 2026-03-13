@@ -19,6 +19,7 @@ export function Hero() {
           className="object-cover"
           priority
           sizes="100vw"
+          quality={75}
         />
         {/* Dark overlay gradient */}
         <div

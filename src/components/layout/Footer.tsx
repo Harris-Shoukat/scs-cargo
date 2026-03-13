@@ -29,8 +29,8 @@ export function Footer() {
     <footer className="bg-[#1e1c1c] text-gray-200">
       {/* Primary Content Area */}
       <div className="mx-auto max-w-7xl py-16 pl-12 pr-8 md:pl-20 md:pr-12 lg:pl-24 lg:pr-16">
-        <div className="grid gap-6 lg:grid-cols-[45%_auto_auto_1fr] lg:gap-x-2 lg:gap-y-6">
-          {/* Column 1: Logo and Newsletter */}
+        <div className="flex flex-col gap-8 lg:flex-row lg:justify-between lg:items-start">
+          {/* Left: Logo and Newsletter */}
           <div>
             <Link href="/" className="inline-block">
               <span className="text-xl font-bold uppercase tracking-tight text-white">
@@ -54,19 +54,20 @@ export function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="min-w-0 flex-1 rounded border border-gray-600 bg-gray-800/50 px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500"
+                  className="min-w-[280px] flex-1 rounded border border-gray-600 bg-gray-800/50 px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:min-w-[320px]"
                 />
                 <button
                   type="submit"
-                  className="shrink-0 rounded bg-[#f77f24] px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e6701a]"
+                  className="shrink-0 rounded bg-red-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-700"
                 >
-                  Sign up
+                  Subscribe
                 </button>
               </form>
             </div>
           </div>
 
-          {/* Column 2: Navigation */}
+          {/* Right: Navigation, Contact, Socials */}
+          <div className="flex flex-col gap-8 sm:flex-row sm:gap-12 lg:gap-16">
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
               Navigation
@@ -85,24 +86,23 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Contact */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
               Contact
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-gray-300">
               <li>
-                <a href="tel:+923010000000" className="hover:text-white">
-                  +92 301 0000000
+                <a href="tel:+923004535707" className="hover:text-white">
+                  +92 300 4535707
                 </a>
               </li>
               <li>
-                <a href="mailto:info@scscargo.com" className="hover:text-white">
-                  info@scscargo.com
+                <a href="mailto:speedyinternationalpk@gmail.com" className="hover:text-white">
+                  speedyinternationalpk@gmail.com
                 </a>
               </li>
               <li className="max-w-[200px]">
-                Faisalabad, Punjab, Pakistan
+                LG 1-A Hill View Arcade, 5 Davis Road, Lahore-Pakistan
               </li>
             </ul>
           </div>
@@ -124,6 +124,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
           </div>
         </div>
       </div>
