@@ -46,7 +46,7 @@ export function Footer() {
               </h3>
               <form
                 onSubmit={handleNewsletterSubmit}
-                className="mt-4 flex flex-row gap-3"
+                className="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-3"
               >
                 <input
                   type="email"
@@ -54,11 +54,11 @@ export function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="min-w-[280px] flex-1 rounded border border-gray-600 bg-gray-800/50 px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:min-w-[320px]"
+                  className="min-w-0 flex-1 rounded border border-gray-600 bg-gray-800/50 px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:min-w-[200px]"
                 />
                 <button
                   type="submit"
-                  className="shrink-0 rounded bg-red-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+                  className="shrink-0 rounded bg-red-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-700 sm:w-auto w-full"
                 >
                   Subscribe
                 </button>

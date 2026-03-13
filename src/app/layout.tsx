@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Header, Footer } from "@/components/layout";
+import { Footer, Header, ScrollToTop } from "@/components/layout";
 import "./globals.css";
 
 const inter = Inter({
@@ -25,6 +25,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <ScrollToTop />
         </div>
       </body>
     </html>

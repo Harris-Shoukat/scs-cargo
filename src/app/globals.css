@@ -35,3 +35,43 @@
     transform: translateX(-50%);
   }
 }
+
+/* Legal page typography - reusable prose styles */
+.legal-prose {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.legal-prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+.legal-prose h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+.legal-prose p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+.legal-prose ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #4b5563;
+}
+.legal-prose li {
+  margin-bottom: 0.5rem;
+}
+.legal-prose a {
+  color: #dc2626;
+  text-decoration: underline;
+}
+.legal-prose a:hover {
+  color: #b91c1c;
+}
